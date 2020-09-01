@@ -1,3 +1,5 @@
+const icon = "gamepad.png",
+
 class Utilities {
 
   constructor() {}
@@ -42,4 +44,3 @@ class Utilities {
 }
 
 Scratch.extensions.register(new Utilities());
-
