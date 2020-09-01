@@ -23,6 +23,12 @@ class Gamepad {
 
           text: 'when [key] is pressed',
           arguments: {
+            image: {
+              type: ArgumentType.IMAGE,
+              dataURI: icon,
+              alt: 'This is an image',
+              flipRTL: true
+            },
             key: {
               type: Scratch.ArgumentType.STRING,
               menu: 'keys'
@@ -36,6 +42,12 @@ class Gamepad {
 
           text: 'when [key] is pressed',
           arguments: {
+            image: {
+              type: ArgumentType.IMAGE,
+              dataURI: icon,
+              alt: 'This is an image',
+              flipRTL: true
+            },
             key: {
               type: Scratch.ArgumentType.STRING,
               menu: 'keys'
