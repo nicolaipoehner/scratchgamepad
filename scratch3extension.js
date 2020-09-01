@@ -14,6 +14,7 @@ class Gamepad {
       color3: '#585858',
 
       menuIconURI: icon,
+      blockIconURI: icon,
 
       blocks: [
         {
