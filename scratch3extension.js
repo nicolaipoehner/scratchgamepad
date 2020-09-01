@@ -9,9 +9,9 @@ class Gamepad {
       id: 'gamepad',
       name: 'Gamepad',
 
-      color1: '#8BC34A',
-      color2: '#7CB342',
-      color3: '#689F38',
+      color1: '#D8D8D8',
+      color2: '#A4A4A4',
+      color3: '#585858',
 
       menuIconURI: icon,
 
