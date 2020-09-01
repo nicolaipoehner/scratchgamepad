@@ -19,7 +19,7 @@ class Gamepad {
         {
           opcode: 'isExactly',
 
-          blockType: Scratch.BlockType.BOOLEAN,
+          blockType: Scratch.BlockType.HAT,
 
           text: 'is [A] exactly [B]?',
           arguments: {
