@@ -25,11 +25,16 @@ class Gamepad {
           arguments: {
             key: {
               type: Scratch.ArgumentType.STRING,
-              defaultValue: 'right'
+              menu: 'keys'
             }
           }
         }
-      ]
+      ],
+      menus: {
+        keys: {
+            items: ['up', 'down', 'left','right']
+        }
+      }
     }
   }
 
