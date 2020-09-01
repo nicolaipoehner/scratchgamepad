@@ -17,19 +17,15 @@ class Gamepad {
 
       blocks: [
         {
-          opcode: 'isExactly',
+          opcode: 'checkKeys',
 
           blockType: Scratch.BlockType.HAT,
 
-          text: 'is [A] exactly [B]?',
+          text: 'when [key] is pressed',
           arguments: {
-            A: {
+            key: {
               type: Scratch.ArgumentType.STRING,
-              defaultValue: 'apple'
-            },
-            B: {
-              type: Scratch.ArgumentType.STRING,
-              defaultValue: 'APPLE'
+              defaultValue: 'right'
             }
           }
         }
@@ -37,8 +33,8 @@ class Gamepad {
     }
   }
 
-  isExactly({A, B}) {
-    return A === B;
+  checkKeys(key) {
+    return "The pressed key is" + key;
   }
 
 }
