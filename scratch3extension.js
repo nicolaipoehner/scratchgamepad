@@ -17,28 +17,31 @@ class Gamepad {
 
       blocks: [
         {
-          opcode: 'isExactly',
+          opcode: 'move',
 
-          blockType: Scratch.BlockType.BOOLEAN,
+          blockType: Scratch.BlockType.HAT,
 
-          text: 'is [A] exactly [B]?',
+          text: 'when [key] is pressed?',
           arguments: {
-            A: {
-              type: Scratch.ArgumentType.STRING,
-              defaultValue: 'apple'
-            },
-            B: {
-              type: Scratch.ArgumentType.STRING,
-              defaultValue: 'APPLE'
+                key: {
+                    type: ArgumentType.String,
+                    menu: 'keys'
+                }
             }
-          }
+        }
+    ],
+    menus: {
+        keys: {
+            items: ['up', 'down', 'right','left']
+        }
+    }
         }
       ]
     }
   }
 
-  isExactly({A, B}) {
-    return A === B;
+  move({key}) {
+    return key;
   }
 
 }
