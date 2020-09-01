@@ -28,18 +28,35 @@ class Gamepad {
               menu: 'keys'
             }
           }
-        }
+        },
+        {
+          opcode: 'checkKeysBoolean',
+
+          blockType: Scratch.BlockType.BOOLEAN,
+
+          text: 'when [key] is pressed',
+          arguments: {
+            key: {
+              type: Scratch.ArgumentType.STRING,
+              menu: 'keys'
+            }
+          }
+        },
       ],
       menus: {
         keys: {
-            items: ['up', 'down', 'left','right']
+            items: ['up', 'down', 'left','right','X', 'Y', 'A','B','left trigger','right trigger','start','select']
         }
       }
     }
   }
 
   checkKeys(key) {
-    return "The pressed key is" + key;
+    return true;
+  }
+
+  checkKeysBoolean(key) {
+    return true;
   }
 
 }
