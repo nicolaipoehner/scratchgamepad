@@ -66,7 +66,7 @@ class Gamepad {
 
   checkKeys(key) {
     var gamepad = navigator.getGamepads()[0];
-    return "Gamepad connected at index %d: %s. %d buttons, %d axes.", gp.index, gp.id, gp.buttons.length, gp.axes.length;
+    return "Gamepad connected at: " +  gp.index + ", " +  gp.id;
   }
 
   checkKeysBoolean(key) {
