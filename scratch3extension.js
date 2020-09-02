@@ -70,7 +70,6 @@ class Gamepad {
 
   checkKeysBoolean(key) {
     var gamepad = navigator.getGamepads()[0];
-    alert(gamepad.id);
     return gamepad.id == "xinput";
   }
 
