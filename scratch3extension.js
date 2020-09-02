@@ -69,7 +69,11 @@ class Gamepad {
   }
 
   checkKeysBoolean(key) {
-    return "getGamepads" in navigator;
+    window.addEventListener("gamepadconnected", function(e) {
+       var gamepad = navigator.getGamepads()[0];
+       alert(gamepad.id);
+    });
+    return true;
   }
 
 }
