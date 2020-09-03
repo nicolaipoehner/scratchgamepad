@@ -47,7 +47,7 @@ class Gamepad {
 
   checkKeys(args) {
     gamepad = navigator.getGamepads()[0];
-    return args.key == "up";
+    return gamepad.id;
   }
 
 }
