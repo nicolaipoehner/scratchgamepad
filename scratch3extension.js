@@ -46,7 +46,7 @@ class Gamepad {
   }
 
   checkKeys(args) {
-    gamepad = navigator.getGamepads()[0];
+    var gamepad = navigator.getGamepads()[0];
     return gamepad.id;
   }
 
