@@ -64,12 +64,13 @@ class Gamepad {
     }
   }
 
-  checkKeys(key) {
+  checkKeys(args) {
     return true;
   }
 
-  checkKeysBoolean(key) {
-    return true;
+  checkKeysBoolean(args) {
+    gamepad = navigator.getGamepads()[0];
+    return gamepad == null;
   }
 
 }
