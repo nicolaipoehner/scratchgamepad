@@ -20,7 +20,7 @@ class Gamepad {
         {
           opcode: 'checkKeys',
 
-          blockType: Scratch.BlockType.BOOLEAN,
+          blockType: Scratch.BlockType.REPORTER,
 
           text: 'when [key] is pressed',
           arguments: {
