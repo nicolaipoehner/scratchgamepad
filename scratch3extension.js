@@ -20,25 +20,6 @@ class Gamepad {
         {
           opcode: 'checkKeys',
 
-          blockType: Scratch.BlockType.HAT,
-
-          text: 'when [key] is pressed',
-          arguments: {
-            image: {
-              type: Scratch.ArgumentType.IMAGE,
-              dataURI: icon,
-              alt: 'This is an image',
-              flipRTL: true
-            },
-            key: {
-              type: Scratch.ArgumentType.STRING,
-              menu: 'keys'
-            }
-          }
-        },
-        {
-          opcode: 'checkKeysBoolean',
-
           blockType: Scratch.BlockType.BOOLEAN,
 
           text: 'when [key] is pressed',
@@ -65,10 +46,6 @@ class Gamepad {
   }
 
   checkKeys(args) {
-    return true;
-  }
-
-  checkKeysBoolean(args) {
     gamepad = navigator.getGamepads()[0];
     return gamepad == null;
   }
