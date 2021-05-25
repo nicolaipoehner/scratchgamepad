@@ -2,7 +2,7 @@
 Gamepad support (SNES) for Scratch 3 using the HTML5 Gamepad API. 
 
 ## Gamepad Tester
-Check the keys for your controller here: https://gamepad-tester.com/
+Check the keys for your controller here: https://greggman.github.io/html5-gamepad-test/
 
 ## Installation 
 Read the wiki here (https://github.com/LLK/scratch-gui/wiki/Getting-Started) to get your local copy of Scratch 3. 
